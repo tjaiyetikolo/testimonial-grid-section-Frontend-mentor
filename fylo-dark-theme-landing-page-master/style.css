@@ -1,0 +1,509 @@
+/* GLOBALS SECTION */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  background: hsl(217, 28%, 15%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+button {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.top {
+  min-height: 100vh;
+}
+
+button {
+  width: 15%;
+  border: none;
+  border-radius: 2rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  background: linear-gradient(
+    to bottom left,
+    hsl(198, 60%, 50%),
+    hsl(176, 68%, 64%)
+  );
+  cursor: pointer;
+}
+
+button:active,
+nav ul li:active {
+  opacity: 0.5;
+}
+
+/* HEADER AND NAV SECTION */
+
+.header {
+  color: white;
+  position: sticky;
+  top: 0px;
+  /* z-index: 3; */
+}
+
+nav {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+nav ul {
+  color: white;
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-left: 4rem;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+nav ul a:visited {
+  color: white;
+}
+
+/* HERO SECTION */
+
+.hero {
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero img {
+  width: 50%;
+  padding: 4rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content p {
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+/* BACKGROUND SECTION */
+.bg-img {
+  background: url(/images/bg-curvy-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: hsl(217, 28%, 15%);
+  padding-bottom: 7rem;
+}
+
+/* MIDDLE SECTION */
+
+#features {
+  min-height: 100vh;
+  z-index: 1;
+  background: hsl(218, 28%, 13%);
+  padding: 2rem;
+}
+.icons-text {
+  display: flex;
+  width: 70%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 0;
+}
+
+.boxes {
+  min-height: 10rem;
+  margin: 8rem;
+  margin-top: 5rem;
+  color: white;
+}
+
+.boxes h4,
+.boxes p {
+  padding: 1rem;
+}
+
+/* PRODUCTIVITY SECTION */
+
+.productivity {
+  padding: 3rem;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  display: flex;
+}
+
+.productivity-text {
+  margin-left: 2rem;
+  color: white;
+  font-size: 3rem;
+  text-align: left;
+}
+
+.productivity-text p,
+.productivity-text a {
+  font-size: 1.7rem;
+}
+
+.productivity-text a {
+  color: hsl(176, 68%, 64%);
+}
+
+/* BOTTOM SECTION  */
+
+/* team section */
+
+#team {
+  background: hsl(218, 28%, 13%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 80vh;
+  padding-top: 6rem;
+}
+
+.card {
+  color: white;
+  width: 30%;
+  padding: 2rem;
+  min-height: 20vh;
+  margin: 6rem;
+  margin-bottom: 40rem;
+  background: hsl(219, 30%, 18%);
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card img {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.card .img-name-tag {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.card .name-tag {
+  margin-left: 1rem;
+}
+
+.card h5 {
+  margin-bottom: 0.2rem;
+}
+
+.card .tag {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.card-1 {
+  z-index: 7;
+}
+.quotes {
+  position: relative;
+  left: 10.5rem;
+  bottom: 26.5rem;
+  z-index: 6;
+}
+
+/* sign up/in section */
+#signin {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+  position: absolute;
+  top: 270rem;
+  left: 20rem;
+}
+
+.signup {
+  background: hsl(217, 28%, 15%);
+  color: white;
+  text-align: center;
+  width: 60%;
+  min-height: 20vh;
+  padding: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 0.7rem;
+}
+
+.signup h1 {
+  margin-bottom: 2rem;
+}
+
+.signup p {
+  margin: 2rem;
+}
+.input-button {
+  display: flex;
+  padding: 2rem;
+}
+
+input {
+  width: 70%;
+  margin-right: 2rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.input-button button {
+  width: 30%;
+}
+
+/* FOOTER SECTION */
+footer {
+  background: hsl(216, 53%, 9%);
+  min-height: 30vh;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-body {
+  color: white;
+  width: 95%;
+  margin-top: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  align-self: stretch;
+  line-height: 3rem;
+}
+
+.footer-body ul {
+  list-style-type: none;
+}
+
+.dummytext {
+  display: flex;
+  flex-direction: row;
+}
+
+.dummytext p {
+  line-height: 2rem;
+}
+
+.dummytext img {
+  width: 5%;
+  height: 15%;
+  margin-right: 2rem;
+}
+
+.contact img {
+  margin-right: 2rem;
+}
+
+.credit a:visited {
+  color: blue;
+}
+/*  */
+/*  */
+/*  */
+/* MEDIA QUERY  */
+/*  */
+/*  */
+/*  */
+
+@media screen and (max-width: 800px) {
+  /* HEADER SECTION */
+  nav {
+    width: 100%;
+  }
+  nav img {
+    width: 40%;
+  }
+  body {
+    font-size: 2rem;
+  }
+  nav ul li {
+    font-size: 1.5rem;
+  }
+
+  /* HERO SECTION */
+  .hero img {
+    padding: 2rem 0;
+    width: 80%;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  button {
+    width: 40%;
+    font-size: 1rem;
+  }
+
+  /* MIDDLE SECTION */
+  #features {
+    font-size: 1.5rem;
+  }
+
+  .icons-text {
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* PRODUCTIVITY SECTION */
+
+  .productivity {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.2rem;
+  }
+  .productivity-text {
+    padding: 2rem;
+  }
+
+  .productivity img {
+    padding: 2rem;
+  }
+
+  .productivity-text p {
+    margin-top: 1rem;
+  }
+
+  /* TEAM SECTION */
+  #team {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30rem;
+  }
+
+  .card {
+    font-size: 1.5rem;
+    width: 80%;
+    min-height: 5vh;
+    margin: 4rem;
+  }
+
+  .quotes {
+    display: none;
+  }
+
+  /* SIGN UP SECTION */
+  #signin {
+    width: 80%;
+    min-height: 10%;
+    position: absolute;
+    left: 6rem;
+    top: 390rem;
+    bottom: 100rem;
+  }
+  .signup {
+    padding: 1rem;
+    font-size: 1.2rem;
+
+    width: 100%;
+    min-height: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
+
+  .input-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-button input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .input-button button {
+    width: 100%;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    font-size: 1.5rem;
+  }
+
+  .footer-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-body img,
+  .footer-info p {
+    margin-bottom: 4rem;
+  }
+
+  .contact {
+    margin-bottom: 6rem;
+  }
+
+  .about,
+  .other,
+  .social-media {
+    margin-bottom: 2rem;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .credit {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
